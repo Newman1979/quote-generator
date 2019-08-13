@@ -1,0 +1,67 @@
+html,
+body {
+  background-color: #3b305c;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  font-size: 50px;
+}
+
+.quote-box {
+  border: 2px solid white;
+  padding: 0.6em;
+  border-radius: 4px;
+  display: block;
+}
+
+.button {
+  background-color: #e7e7e7;
+  color: black;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: lightblue;
+}
+
+.quote-text {
+  color: white;
+  animation: text 3s 1;
+}
+
+.quote-text:hover {
+  color: lightblue;
+}
+
+.quote-author {
+  font-size: 25px;
+  color: darkorange;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+    margin-bottom: -30px;
+  }
+  30% {
+    letter-spacing: 10px;
+    margin-bottom: -30px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -30px;
+  }
+  100% {
+    letter-spacing: 4px;
+  }
+}
+
+/* Problems with the styling -8/13/19-
+1 -> quote box transitions/animates before text is recieved from the api call.
+2 -> Border for box should be fixed larger and then grow with room for the new text.
+3 -> Quote box is too large when empty
+4 -> text doesn't animate on new quote call. How to fix this???
+*/

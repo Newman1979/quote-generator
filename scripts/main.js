@@ -28,7 +28,7 @@ function callApi() {
 }
 
 $(document).ready(function() {
-  // callApi();
+  callApi();
 });
 
 /*
